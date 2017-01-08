@@ -1,5 +1,1 @@
-# hello-world
-Just practising how to use github
-
-Made a commit
-Another commit
+This project aims to solve algorithms
