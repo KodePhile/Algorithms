@@ -8,6 +8,7 @@ def reverseVowels(word):
                               word[index].lower() in "aeiou" ]
 
         lastCharIndex = -1
+        #Reverse vowels
         for pair in vowelsAndPosition:
             word[pair[1]] = vowelsAndPosition[lastCharIndex][0]
             lastCharIndex -= 1
