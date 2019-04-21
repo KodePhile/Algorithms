@@ -1,4 +1,4 @@
-def reverseVowels(word):
+def reverse_vowels(word):
     if isinstance(word, str):
         word = list(word)
         
@@ -13,3 +13,5 @@ def reverseVowels(word):
             word[pair[1]] = vowels_and_their_positions[last_char_index][0]
             last_char_index -= 1
         return "".join(word)
+    
+
