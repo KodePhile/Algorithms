@@ -3,13 +3,13 @@ def reverseVowels(word):
         word = list(word)
         
         #list of tuples containing vowels and their index
-        vowelsAndPosition = [ (word[index], index) for index in
+        vowels_and_their_positions = [ (word[index], index) for index in
                               range(len(word))  if
                               word[index].lower() in "aeiou" ]
 
-        lastCharIndex = -1
+        last_char_index = -1
         #Reverse vowels
-        for pair in vowelsAndPosition:
-            word[pair[1]] = vowelsAndPosition[lastCharIndex][0]
-            lastCharIndex -= 1
+        for pair in vowels_and_their_positions:
+            word[pair[1]] = vowels_and_their_positions[last_char_index][0]
+            last_char_index -= 1
         return "".join(word)
