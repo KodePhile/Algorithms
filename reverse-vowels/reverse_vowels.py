@@ -2,7 +2,7 @@ def reverse_vowels(word):
     if isinstance(word, str):
         word = list(word)
         
-        #list of tuples containing vowels and their index
+        #list of tuples containing vowels and their indexes
         vowels_and_their_positions = [ (word[index], index) for index in
                               range(len(word))  if
                               word[index].lower() in "aeiou" ]
